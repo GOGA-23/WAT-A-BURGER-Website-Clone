@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/Footer-Logo-Color-pv31fxwwg99aj55285rj7q22czlnj3uour7xdx8fe0.png"
+      type="image/x-icon"
+    />
+    <title>Wat A Burger - Baap of all burgers</title>
+    <!-- Fontawesome Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Remix Icon CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper Js CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="bg-skinColor dark:bg-darkBlack">
+    <!------ Navbar ------>
+    <!-- The above code is creating a header section for a website. It includes a navigation bar with a
+    logo, a menu with links to different sections of the website, and options for toggling between
+    light and dark mode. The header is sticky and remains at the top of the screen even when
+    scrolling. The code also includes responsive design for different screen sizes. -->
+    <header
+      class="bg-primaryColor dark:bg-darkBlack sticky top-0 left-0 w-screen z-50"
+    >
+      <nav
+        class="container py-2 flex justify-between items-center gap-4 max-w-7xl"
+      >
+        <div>
+          <a href="#">
+            <img
+              class="h-[60px] lg:h-[70px] w-auto"
+              src="./images/Header-Logo-03-1024x383.png "
+              alt="wat a burger logo"
+            />
+          </a>
+        </div>
+        <div
+          class="h-auto w-full bg-secondaryColor font-lora z-50 bg-transparent nav_hover"
+        >
+          <ul
+            class="list-none hidden lg:flex lg:justify-around text-white text-lg"
+          >
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#fav">Fav Orders</a></li>
+            <li><a href="#banner">WAT Banner</a></li>
+            <li><a href="#lists">Menu</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="text-3xl text-white space-x-2 flex">
+          <span
+            ><i
+              class="ri-moon-line hover:text-slate-300 cursor-pointer"
+              id="light-toggle"
+            ></i
+          ></span>
+          <span
+            ><i
+              class="ri-menu-2-line hover:text-slate-300 cursor-pointer lg:hidden"
+              id="ham"
+            ></i
+          ></span>
+        </div>
+      </nav>
+      <div
+        class="h-auto w-full bg-secondaryColor dark:bg-darkBlack font-lora hidden z-50 nav_hover"
+        id="menu"
+      >
+        <ul
+          class="list-none grid place-items-center lg:hidden gap-3 text-white text-xl"
+        >
+          <li class="mt-3"><a href="#home" class="lists">Home</a></li>
+          <li><a href="#about" class="lists">About Us</a></li>
+          <li><a href="#fav" class="lists">Fav Orders</a></li>
+          <li><a href="#banner" class="lists">WAT Banner</a></li>
+          <li><a href="#lists" class="lists">Menu</a></li>
+          <li>
+            <a
+              href="#testimonial hover:scale-95 hover:transition-all ease-in duration-200"
+              class="lists"
+              >Testimonial</a
+            >
+          </li>
+          <li><a href="#contact" class="lists">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+    <!------ section 1 - Home ------>
+    <!-- Slider main container -->
+    <!-- The above code is creating a slideshow or image carousel using the Swiper library. It creates a
+    container with a unique ID "home" and inside it, there is a div with the class "swiper" which
+    acts as the main container for the slider. Inside the swiper container, there is another div
+    with the class "swiper-wrapper" which contains the individual slides. Each slide is represented
+    by a div with the class "swiper-slide" and contains an image with a source and alt attribute. -->
+    <section id="home">
+      <!-- Slider main container -->
+      <div
+        class="swiper mySwiper-1 min-h-[260px] sm:min-h-[360px] md:h-[510px] lg:h-[720px] w-screen"
+      >
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              class="min-h-[260px] sm:min-h-[360px] md:h-[510px] lg:h-[720px] w-screen"
+              src="./images/slider/slider-1.jpg"
+              alt="Slider-1"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="min-h-[260px] sm:min-h-[360px] md:h-[510px] lg:h-[720px] w-screen"
+              src="./images/slider/slider-2.jpg"
+              alt="Slider-2"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="min-h-[260px] sm:min-h-[360px] md:h-[510px] lg:h-[720px] w-screen"
+              src="./images/slider/slider-3.jpg"
+              alt="Slider-3"
+            />
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <!------ section 2 - About us ------>
+    <!-- The above code is creating a section with an id of "about". Inside the section, there is a
+    container with two columns. -->
+    <section
+      class="h-full w-screen bg-skinColor dark:bg-darkBlack my-4"
+      id="about"
+    >
+      <div class="container lg:grid lg:grid-cols-2 lg:gap-4">
+        <div class="animate-movingY">
+          <img
+            class="h-1/2 lg:h-full w-full rounded-xl shadow-xl shadow-skinColor"
+            src="./images/About-Us-graphic1.jpg"
+            alt="Burger-terminology"
+          />
+        </div>
+        <div
+          class="bg-skinColor dark:bg-darkBlack p-2 antialiased lg:grid lg:content-center"
+        >
+          <h5 class="font-oswald font-extrabold tracking-widest font text-3xl">
+            Welcome
+          </h5>
+          <h2 class="font-oswald text-5xl font-bold text-orangeColor my-5">
+            INDIA’S LARGEST HOME-GROWN BURGER CHAIN IS HERE TO SERVE YOU.
+          </h2>
+          <p class="font-lora text-lg text-justify text-slate-700">
+            We know you’re obviously a fan of desi flavours and have your heart
+            set on it. Your search for the best Indian fusion burgers ends here.
+            With the taste of India in every bite, we have thoughtfully curated
+            our menu to serve the Indian palette. Bursting with flavours, our
+            wide range of burgers will always make you crave for more.
+          </p>
+          <button class="btn-home">
+            KNOWN MORE
+            <i
+              class="fa-solid fa-arrow-right fa-fade px-2"
+              style="color: #ffc685"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="grid grid-cols-1 place-items-center md:flex md:justify-center md:items-center m-4"
+    >
+      <div class="box">
+        <div class="font-oswald text-white">
+          <h4 class="text-5xl">65+</h4>
+          <p class="text-xl">Outlets</p>
+        </div>
+        <div class="font-oswald text-white">
+          <h4 class="text-5xl">27+</h4>
+          <p class="text-xl">Cities</p>
+        </div>
+        <div class="font-oswald text-white">
+          <h4 class="text-5xl text-center">2.5L+</h4>
+          <p class="text-xl">Burgers Sold / Month</p>
+        </div>
+      </div>
+    </section>
+    <!------ section 3 - Fav Orders ------>
+    <!-- The above code is creating a section with a container class and an id of "fav". Inside the
+    section, there is a heading and a div with a flex layout. Inside the div, there is another
+    heading and a paragraph with some text. -->
+    <section class="container" id="fav">
+      <div class="flex flex-col justify-center items-center m-8 h-56">
+        <h4 class="font-oswald font-bold text-xl md:text-3xl">
+          India Ke Burgers
+        </h4>
+        <div
+          class="font-oswald font-black text-4xl sm:text-6xl md:text-7xl text-orangeColor"
+        >
+          <p>DESI FLAVOURS</p>
+          <p>KE CHAMPION</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="h-[620px]">
+          <!-- Swiper -->
+          <div class="swiper mySwiper-2 h-full md:h-[720px]">
+            <div class="swiper-wrapper">
+              <!-- Slider  -->
+              <div class="swiper-slide md:w-5/12 space-y-6">
+                <div class="lists-order">
+                  <div class="my-8">
+                    <img
+                      class="h-60 w-60"
+                      src="./images/favourites slider/Bestseller-Item-1.png"
+                      alt="peri peri burger pic"
+                    />
+                  </div>
+                  <div class="h-1 w-24 bg-orangeColor"></div>
+                  <div class="p-6">
+                    <h4
+                      class="text-orangeColor text-2xl font-semibold text-center"
+                    >
+                      PERI-PERI-CHICKEN BURGER
+                    </h4>
+                    <p class="font-lora text-slate-600 leading-loose my-5">
+                      Juicy Chicken patty grilled to perfection served with peri
+                      peri sauce, creamy mayo and a hint of spice.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide md:w-5/12 space-y-6">
+                <div class="lists-order">
+                  <div class="my-8">
+                    <img
+                      class="h-60 w-60"
+                      src="./images/favourites slider/Bestseller-Item-3.png"
+                      alt="BUNTASTIC KADHAI PANEER pic"
+                    />
+                  </div>
+                  <div class="h-1 w-24 bg-orangeColor"></div>
+                  <div class="p-6">
+                    <h4
+                      class="text-orangeColor text-2xl font-semibold text-center"
+                    >
+                      BUNTASTIC KADHAI PANEER
+                    </h4>
+                    <p class="font-lora text-slate-600 leading-loose my-5">
+                      Ever tasted a Kadhai Paneer in a burger? Well, this is
+                      your chance! Fresh and soft WAB special paneer patty
+                      marinated in indian sauces with fresh lettuce tomato and
+                      capsicum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide md:w-5/12 space-y-6">
+                <div class="lists-order">
+                  <div class="my-8">
+                    <img
+                      class="h-60 w-60"
+                      src="./images/favourites slider/Grilled-Mutton-Burger.png"
+                      alt="GRILLED MUTTON KEBAB BURGER pic"
+                    />
+                  </div>
+                  <div class="h-1 w-24 bg-orangeColor"></div>
+                  <div class="p-6">
+                    <h4
+                      class="text-orangeColor text-2xl font-semibold text-center"
+                    >
+                      GRILLED MUTTON KEBAB BURGER
+                    </h4>
+                    <p class="font-lora text-slate-600 leading-loose my-5">
+                      Tender mutton seekh kebab, roasted and mixed with creamy
+                      sauces, layered with veggies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide md:w-5/12 space-y-6">
+                <div class="lists-order">
+                  <div class="my-8">
+                    <img
+                      class="h-60 w-60"
+                      src="./images/favourites slider/Hawaiin-Teriyaki-Burger-.png"
+                      alt="HAWAIIAN TERIYAKI CHICKEN BURGER pic"
+                    />
+                  </div>
+                  <div class="h-1 w-24 bg-orangeColor"></div>
+                  <div class="p-6">
+                    <h4
+                      class="text-orangeColor text-2xl font-semibold text-center"
+                    >
+                      HAWAIIAN TERIYAKI CHICKEN BURGER
+                    </h4>
+                    <p class="font-lora text-slate-600 leading-loose my-5">
+                      A huge double grilled chicken which is cooked to
+                      perfection and served with cheddar cheese on top, red
+                      cabbage slaw, pickles, wab sauce, teriyaki sauce and
+                      peri-peri pineapple.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide md:w-5/12 space-y-6">
+                <div class="lists-order">
+                  <div class="my-8">
+                    <img
+                      class="h-60 w-60"
+                      src="./images/favourites slider/Korean-Chilli-Chicken-Burger-.png"
+                      alt="KOREAN CHILLI BURGER pic"
+                    />
+                  </div>
+                  <div class="h-1 w-24 bg-orangeColor"></div>
+                  <div class="p-6">
+                    <h4
+                      class="text-orangeColor text-2xl font-semibold text-center"
+                    >
+                      KOREAN CHILLI BURGER
+                    </h4>
+                    <p class="font-lora text-slate-600 leading-loose my-5">
+                      Fancy the smokey flavoured peppery BBQ sauce combined with
+                      shredded lettuce, pickles, and in-house sauce over crispy
+                      fried chicken between suns.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide md:w-5/12 space-y-6">
+                <div class="lists-order">
+                  <div class="my-8">
+                    <img
+                      class="h-60 w-60"
+                      src="./images/favourites slider/Cold-Coffee-Frappe-.png"
+                      alt="COLD COFFEE FRAPPE pic"
+                    />
+                  </div>
+                  <div class="h-1 w-24 bg-orangeColor"></div>
+                  <div class="p-6">
+                    <h4
+                      class="text-orangeColor text-2xl font-semibold text-center"
+                    >
+                      COLD COFFEE FRAPPE
+                    </h4>
+                    <p class="font-lora text-slate-600 leading-loose my-5">
+                      Frothy chilled coffee &amp; ice cream blend
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center my-9 md:my-[150px]">
+        <a
+          href="#"
+          class="px-6 py-4 bg-orangeColor rounded-full text-white font-medium cursor-pointer hover:bg-orange-500"
+          >ORDER NOW
+          <i
+            class="fa-solid fa-utensils fa-bounce text-xl px-3"
+            style="color: #ffbf52"
+          ></i
+        ></a>
+      </div>
+    </section>
+    <!------ section 4 - WAT Banner ------>
+    <!-- The above code is creating a section with the id "banner" and a class "w-screen". Inside the
+   section, there is an image element with a source attribute pointing to an image file
+   "WAB-Sign-Banner-2.jpg". The image is displayed with a minimum height of 260 pixels on small
+   screens, 360 pixels on medium screens, and 510 pixels on large screens. The image is set to
+   occupy the full width of the screen. -->
+    <section id="banner" class="w-screen">
+      <div>
+        <img
+          class="min-h-[260px] sm:min-h-[360px] md:h-[510px] lg:h-full w-screen"
+          src="./images/WAB-Sign-Banner-2.jpg"
+          alt="WAT Sign Banner"
+        />
+      </div>
+    </section>
+    <!------ section 5 - Menu ------>
+    <section class="container">
+      <div class="flex flex-col justify-center items-center m-8 h-56">
+        <h4 class="font-oswald font-bold text-xl md:text-3xl">MENU</h4>
+        <div
+          class="font-oswald font-black text-center text-4xl sm:text-6xl md:text-7xl text-orangeColor"
+        >
+          <p>TAKE YOUR</p>
+          <p>DELICIOUS PICK</p>
+        </div>
+      </div>
+    </section>
+    <!-- The above code is creating a section with a container that contains a list of menu items. Each
+    menu item is represented by a div element with an image and a text description. The section also
+    includes a divider and additional content for the Burgers and Wraps & Sandwiches menus. Finally,
+    there is a button to view the full menu. -->
+    <section>
+      <div class="container" id="lists">
+        <div class="flex flex-wrap justify-evenly items-center px-5">
+          <div class="animate-movingY">
+            <a href="#">
+              <img
+                class="h-24 mx-auto"
+                src="./images/WAB-Homepage-Menu-Icons-1.png"
+                alt="MENU-1"
+              />
+              <p
+                class="hover:text-orangeColor my-3 font-oswald text-lg font-bold text-center"
+              >
+                Burgers
+              </p>
+            </a>
+          </div>
+          <div class="animate-movingY">
+            <a href="#">
+              <img
+                class="h-24 mx-auto"
+                src="./images/WAB-Homepage-Menu-Icons-2.png"
+                alt="MENU-2"
+              />
+              <p
+                class="hover:text-orangeColor my-3 font-oswald text-lg font-bold text-center"
+              >
+                WRAPS &amp; <br />SANDWICHES
+              </p>
+            </a>
+          </div>
+          <div class="animate-movingY">
+            <a href="#">
+              <img
+                class="h-24 mx-auto"
+                src="./images/WAB-Homepage-Menu-Icons-4.png"
+                alt="MENU-4"
+              />
+              <p
+                class="hover:text-orangeColor my-3 font-oswald text-lg font-bold text-center"
+              >
+                SIDES
+              </p>
+            </a>
+          </div>
+          <div class="animate-movingY">
+            <a href="#">
+              <img
+                class="h-24 mx-auto"
+                src="./images/WAB-Homepage-Menu-Icons-5.png"
+                alt="MENU-5"
+              />
+              <p
+                class="hover:text-orangeColor my-3 font-oswald text-lg font-bold text-center"
+              >
+                DESSERTS
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="h-1 w-4/5 bg-orangeColor mx-auto mt-7"></div>
+      <!-- Burgers Menu -->
+      <!-- The above code is creating a container with a grid layout. Inside the container, there are
+      multiple grid items that display different food items and their prices. Each grid item
+      consists of two columns, with the food item name taking up two-thirds of the width and the
+      price taking up one-third of the width. The text color of the food item name changes to orange
+      and the cursor changes to a pointer when hovered over. -->
+      <div class="container font-lora text-slate-600">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:ms-[86px] gap-12 p-10">
+          <div class="grid grid-cols-3 text-lg md:text-xl space-x-8">
+            <p
+              class="grid col-span-2 hover:text-orangeColor hover:cursor-pointer"
+            >
+              Veg Fantastic Slider
+            </p>
+            <p class="text-orangeColor font-bold md:text-2xl">39/-</p>
+          </div>
+          <div class="grid grid-cols-3 text-lg space-x-8">
+            <p
+              class="grid col-span-2 hover:text-orangeColor hover:cursor-pointer"
+            >
+              Chicken Fantastic Slide
+            </p>
+            <p class="text-orangeColor font-bold md:text-2xl">79/-</p>
+          </div>
+          <div class="grid grid-cols-3 text-lg space-x-8">
+            <p
+              class="grid col-span-2 hover:text-orangeColor hover:cursor-pointer"
+            >
+              Wild Potato Burger
+            </p>
+            <p class="text-orangeColor font-bold md:text-2xl">239/-</p>
+          </div>
+          <div class="grid grid-cols-3 text-lg space-x-8">
+            <p
+              class="grid col-span-2 hover:text-orangeColor hover:cursor-pointer"
+            >
+              Veg Fantastic Slider
+            </p>
+            <p class="text-orangeColor font-bold md:text-2xl">39/-</p>
+          </div>
+          <div class="grid grid-cols-3 text-lg space-x-8">
+            <p
+              class="grid col-span-2 hover:text-orangeColor hover:cursor-pointer"
+            >
+              Chicken Fantastic Slide
+            </p>
+            <p class="text-orangeColor font-bold md:text-2xl">79/-</p>
+          </div>
+          <div class="grid grid-cols-3 text-lg space-x-8">
+            <p
+              class="grid col-span-2 hover:text-orangeColor hover:cursor-pointer"
+            >
+              Wild Potato Burger
+            </p>
+            <p class="text-orangeColor font-bold md:text-2xl">239/-</p>
+          </div>
+        </div>
+      </div>
+      <div class="container py-5">
+        <p class="font-lora text-slate-600 text-lg font-semibold">
+          *All prices are in Indian rupee excluding GST
+        </p>
+      </div>
+      <div class="my-8 text-center">
+        <a href="#">
+          <button class="btn-menu">
+            FULL
+            <i class="fa-solid fa-utensils fa-shake" style="color: #ffffff"></i>
+            MENU
+          </button>
+        </a>
+      </div>
+    </section>
+    <!------ section 6 - Testimonial ------>
+    <!-- The above code is creating a testimonial section on a webpage. It includes a heading, a title,
+    and a container for testimonials. The testimonials are displayed in a slider format using the
+    Swiper library. Each testimonial includes an image, a quote, the name of the person giving the
+    testimonial, and their location. -->
+    <section id="testimonial">
+      <div class="container my-7">
+        <div class="flex flex-col justify-center items-center m-8 h-56">
+          <h4 class="font-oswald font-bold text-xl md:text-3xl">MENU</h4>
+          <div
+            class="font-oswald font-black text-center text-4xl sm:text-6xl md:text-7xl text-orangeColor"
+          >
+            <p>Testimonial</p>
+            <p>WAT-A-REVIEW</p>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="h-3/4 shadow-xl bg-orange-300 shadow-slate-400 p-5 rounded-3xl"
+          >
+            <div class="swiper mySwiper-3">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide flex flex-col lg:grid lg:grid-cols-2 lg:gap-4"
+                >
+                  <div class="lg:grid lg:row-span-2">
+                    <img
+                      class="w-full h-1/2 rounded-3xl lg:w-full lg:h-full"
+                      src="./images/testimony slider/testimony-2.jpg"
+                      alt="testimonial-1"
+                    />
+                  </div>
+                  <div>
+                    <p class="para">
+                      <span
+                        ><i
+                          class="fa-solid fa-quote-left fa-fade text-8xl"
+                          style="color: #e26803"
+                        ></i
+                      ></span>
+                      Great music! The vibe was also good, staff was very
+                      helpful and the food was amazing. The burgers and desserts
+                      are a must try! I had the Sizzling Brownie. A must go in
+                      CP.
+                    </p>
+                  </div>
+                  <div class="font-lora">
+                    <h4 class="font-semibold text-2xl">
+                      Neha
+                      <i
+                        class="fa-solid fa-arrows-down-to-people fa-beat-fade text-2xl"
+                        style="color: #e46701"
+                      ></i>
+                    </h4>
+                    <p class="text-slate-700 text-xl">- Connaught Place</p>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide flex flex-col lg:grid lg:grid-cols-2 lg:gap-4"
+                >
+                  <div class="lg:grid lg:row-span-2">
+                    <img
+                      class="w-full h-1/2 rounded-3xl lg:w-full lg:h-full"
+                      src="./images/testimony slider/testimony-3.jpg"
+                      alt="testimonial-2"
+                    />
+                  </div>
+                  <div>
+                    <p class="para">
+                      <span
+                        ><i
+                          class="fa-solid fa-quote-left fa-fade text-8xl"
+                          style="color: #e26803"
+                        ></i
+                      ></span>
+                      I was so delighted to see this chain in Bhopal. They are
+                      serving some awesome burgers
+                    </p>
+                  </div>
+                  <div class="font-lora">
+                    <h4 class="font-semibold text-2xl">
+                      Apoorva Chakravorty
+                      <i
+                        class="fa-solid fa-arrows-down-to-people fa-beat-fade text-2xl"
+                        style="color: #e46701"
+                      ></i>
+                    </h4>
+                    <p class="text-slate-700 text-xl">- Bhopal</p>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide flex flex-col lg:grid lg:grid-cols-2 lg:gap-4"
+                >
+                  <div class="lg:grid lg:row-span-2">
+                    <img
+                      class="w-full h-1/2 rounded-3xl lg:w-full lg:h-full"
+                      src="./images/testimony slider/testimony-4.jpg"
+                      alt="testimonial-3"
+                    />
+                  </div>
+                  <div>
+                    <p class="para">
+                      <span
+                        ><i
+                          class="fa-solid fa-quote-left fa-fade text-8xl"
+                          style="color: #e26803"
+                        ></i
+                      ></span>
+                      The variety of burgers at Wat-a-Burger is amazing! I tried
+                      their Crunchy Paneer Burger which was delicious and
+                      filling. I also tried their cheese loaded fries and Cold
+                      Coffee Frappe- they were delicious as well. A great and
+                      very reasonable place for burger lovers.
+                    </p>
+                  </div>
+                  <div class="font-lora">
+                    <h4 class="font-semibold text-2xl">
+                      Arjun
+                      <i
+                        class="fa-solid fa-arrows-down-to-people fa-beat-fade text-2xl"
+                        style="color: #e46701"
+                      ></i>
+                    </h4>
+                    <p class="text-slate-700 text-xl">- Janakpuri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------ section 7 - Contact us ------>
+    <section>
+      <div
+        class="bg-orangeColor dark:bg-darkBlack dark:border dark:border-slate-700 w-screen p-7"
+      >
+        <div
+          class="flex flex-col justify-center md:flex md:flex-row md:justify-between items-center gap-7"
+        >
+          <p class="text-4xl text-white font-oswald text-center">
+            FOR FRANCHISE<br />ENQUIRIES<br />
+            <i
+              class="fa-solid fa-phone-volume fa-shake mx-2"
+              style="color: #ffffff"
+            ></i>
+            7778889991
+          </p>
+          <a href="#" class="mx-auto md:mx-3"
+            ><button
+              class="text-2xl bg-yellowColor p-5 rounded-xl text-slate-100 font-oswald"
+            >
+              Find Out More
+              <i
+                class="fa-solid fa-arrow-right fa-flip"
+                style="color: #fd7608"
+              ></i></button
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- The above code is creating a section for a contact form and social media links. It includes a
+    logo, social media icons (Facebook, Instagram, Twitter, LinkedIn), a form with fields for name,
+    email, and a textarea for describing something, and a "Send" button. It also includes a section
+    for displaying available platforms (DotPe, Zomato, SWIGGY). The code uses various CSS classes to
+    style the elements. -->
+    <section class="bg-primaryColor dark:bg-darkBlack w-screen" id="contact">
+      <div class="container">
+        <div>
+          <img
+            class="h-40 p-8 mx-auto"
+            src="./images/Footer-Logo-Color-pv31fxwwg99aj55285rj7q22czlnj3uour7xdx8fe0.png"
+            alt="Footer logo"
+          />
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3"
+        >
+          <div>
+            <p class="text-2xl text-white font-oswald text-center py-4">
+              Follow Us On
+            </p>
+            <div class="text-center py-4">
+              <a
+                href="#"
+                class="bg-yellowColor p-3 rounded-full hover:bg-yellow-500 hover:cursor-pointer"
+                ><button class="">
+                  <i
+                    class="ri-facebook-circle-fill text-white text-center text-2xl"
+                  ></i></button
+              ></a>
+              <a
+                href="#"
+                class="bg-yellowColor p-3 rounded-full hover:bg-yellow-500 hover:cursor-pointer"
+                ><button>
+                  <i
+                    class="ri-instagram-line text-white text-center text-2xl"
+                  ></i></button
+              ></a>
+              <a
+                href="#"
+                class="bg-yellowColor p-3 rounded-full hover:bg-yellow-500 hover:cursor-pointer"
+                ><button>
+                  <i
+                    class="ri-twitter-line text-white text-center text-2xl"
+                  ></i></button
+              ></a>
+              <a
+                href="#"
+                class="bg-yellowColor p-3 rounded-full hover:bg-yellow-500 hover:cursor-pointer"
+                ><button>
+                  <i
+                    class="ri-linkedin-fill text-white text-center text-2xl"
+                  ></i></button
+              ></a>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-evenly items-center gap-5 my-8 dark:shadow-md dark:shadow-slate-600 px-5"
+          >
+            <p class="text-2xl font-oswald text-white">
+              It’s always great to hear from you
+            </p>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="input"
+              placeholder="Name"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input"
+              placeholder="Email"
+            />
+            <textarea
+              name="value"
+              id="textarea"
+              cols="30"
+              rows="10"
+              class="input"
+              placeholder="Describe Us"
+            ></textarea>
+            <button
+              class="py-2 px-5 my-5 w-2/3 bg-yellowColor rounded-2xl font-oswald text-white"
+              type="submit"
+            >
+              Send
+            </button>
+          </div>
+          <div class="font-oswald text-white text-center">
+            <p class="p-8 font-lora font-semibold text-2xl">Avaiable on</p>
+            <div class="text-5xl space-y-5">
+              <p>DotPe</p>
+              <p class="italic">Zomato</p>
+              <p>SWIGGY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <!-- The above code is creating a footer element with a background color and a shadow effect. Inside
+    the footer, there is a container element that contains a paragraph element. The paragraph
+    element displays a copyright message. -->
+    <footer
+      class="bg-secondaryColor dark:bg-darkBlack dark:shadow-lg dark:shadow-slate-400 w-screen"
+    >
+      <div class="container">
+        <p class="text-xl font-lora text-white text-center p-8">
+          COPYRIGHTS © 2023 Wat-a-Burger Clone. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- Swiper Js Script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      /* Sliders for Home section */
+      const swiper1 = new Swiper(".mySwiper-1", {
+        // spaceBetween: 20,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      /* Sliders for Fav orders section */
+      const swiper2 = new Swiper(".mySwiper-2", {
+        speed: 400,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        grabCursor: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 1024px
+          1024: {
+            slidesPerView: 3,
+          },
+          1284: {
+            slidesPerView: 4,
+          },
+        },
+      });
+
+      /* Slider for Testimonial */
+      const swiper3 = new Swiper(".mySwiper-3", {
+        // spaceBetween: 20,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- Main Js scripts -->
+    <script src="./main.js"></script>
+  </body>
+</html>
